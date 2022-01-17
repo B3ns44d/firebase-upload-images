@@ -1,0 +1,11 @@
+.dockerignore
+.gitignore
+.env.local
+Dockerfile
+Makefile
+LICENSE
+**/*.md
+**/*_test.go
+tmp/
+.git/
+.github/
