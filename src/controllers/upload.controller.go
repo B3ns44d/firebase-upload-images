@@ -20,7 +20,7 @@ func Upload(c *gin.Context) {
 	var err error
 
 	ctx := appengine.NewContext(c.Request)
-	opt := option.WithCredentialsFile("env/serviceAccountKey.json")
+	opt := option.WithCredentialsFile(os.Getenv("GOOGLE_APPLICATION_CREDENTIALS"))
 
 	storageClient, err = storage.NewClient(ctx, opt)
 	if err != nil {

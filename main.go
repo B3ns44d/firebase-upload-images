@@ -1,19 +1,14 @@
 package main
 
 import (
-	"log"
 	"os"
 
 	"github.com/b3ns44d/cloud-storage/src/controllers"
 	"github.com/gin-gonic/gin"
-	"github.com/joho/godotenv"
+	_ "github.com/joho/godotenv/autoload"
 )
 
 func main() {
-	err := godotenv.Load()
-	if err != nil {
-		log.Fatal("Error loading .env file")
-	}
 
 	gin.ForceConsoleColor()
 
