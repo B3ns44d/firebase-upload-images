@@ -18,6 +18,6 @@ FROM scratch
 
 COPY --from=builder ["/app/storage", "/"]
 
-EXPOSE 3002
+EXPOSE 4009
 
 ENTRYPOINT ["/storage"]

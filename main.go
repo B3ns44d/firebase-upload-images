@@ -2,6 +2,7 @@ package main
 
 import (
 	"log"
+	"os"
 
 	"github.com/b3ns44d/cloud-storage/src/controllers"
 	"github.com/gin-gonic/gin"
@@ -24,5 +25,5 @@ func main() {
 	})
 	router.POST("/upload", controllers.Upload)
 
-	router.Run(":4009")
+	router.Run(os.Getenv("PORT"))
 }
