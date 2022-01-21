@@ -23,7 +23,7 @@ jobs:
         id: docker_meta
         uses: crazy-max/ghaction-docker-meta@v1
         with:
-          images: ghcr.io/b3ns44d/cloud-storage
+          images: ghcr.io/b3ns44d/ius
           tag-sha: true
           tag-edge: false
           tag-latest: true
